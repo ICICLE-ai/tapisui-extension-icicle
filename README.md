@@ -1,1 +1,1 @@
-# tapisui-extensions-icicle
+# tapisui-extension-icicle
