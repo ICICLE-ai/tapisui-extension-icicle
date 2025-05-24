@@ -8,7 +8,7 @@ import {
   DataLabeler,
   JupyterLab,
   OpenWebUI,
-  VisualAnalytics,
+  CatalogAnalytics,
   SmartScheduler,
   TrainingCatalog,
   CKNDashboard,
@@ -34,10 +34,14 @@ const extension = createExtension({
     'ml-edge',
     'open-web-ui',
     'jupyter-lab',
-    'visual-analytics',
+    'analytics',
     'training-catalog',
     'ckn-dashboard',
     'openpass',
+    'systems',
+    'jobs',
+    'files',
+    'apps',
     //'data-labeler',
     //'smart-scheduler',
   ],
@@ -90,13 +94,6 @@ extension.registerService({
 });
 
 extension.registerService({
-  id: 'visual-analytics',
-  sidebarDisplayName: 'Visual Analytics',
-  iconName: 'globe',
-  component: VisualAnalytics,
-});
-
-extension.registerService({
   id: 'smart-scheduler',
   sidebarDisplayName: 'Smart Scheduler',
   iconName: 'globe',
@@ -108,6 +105,13 @@ extension.registerService({
   sidebarDisplayName: 'Training Catalog',
   iconName: 'globe',
   component: TrainingCatalog,
+});
+
+extension.registerService({
+  id: 'analytics',
+  sidebarDisplayName: 'Analytics',
+  iconName: 'globe',
+  component: CatalogAnalytics,
 });
 
 extension.registerService({

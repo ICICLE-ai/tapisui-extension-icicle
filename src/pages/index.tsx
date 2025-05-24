@@ -4,6 +4,7 @@ export { OpenWebUI } from './OpenWebUI';
 export { MLEdge } from './MLEdge';
 export { DigitalAgOpenPASS } from './DigitalAgOpenPASS';
 export { SmartScheduler } from './SmartScheduler';
-export { VisualAnalytics } from './VisualAnalytics';
+//export { VisualAnalytics } from './VisualAnalytics';
 export { TrainingCatalog } from './TrainingCatalog';
 export { CKNDashboard } from './CKNDashboard';
+export { CatalogAnalytics } from './CatalogAnalytics';
