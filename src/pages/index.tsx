@@ -8,3 +8,4 @@ export { SmartScheduler } from './SmartScheduler';
 export { TrainingCatalog } from './TrainingCatalog';
 export { CKNDashboard } from './CKNDashboard';
 export { CatalogAnalytics } from './CatalogAnalytics';
+export { ComponentCatalog } from './ComponentCatalog';

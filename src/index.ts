@@ -13,6 +13,7 @@ import {
   TrainingCatalog,
   CKNDashboard,
   DigitalAgOpenPASS,
+  ComponentCatalog,
 } from './pages';
 
 const extension = createExtension({
@@ -36,6 +37,7 @@ const extension = createExtension({
     'jupyter-lab',
     'analytics',
     'training-catalog',
+    'component-catalog',
     'ckn-dashboard',
     'openpass',
     'systems',
@@ -108,10 +110,10 @@ extension.registerService({
 });
 
 extension.registerService({
-  id: 'analytics',
-  sidebarDisplayName: 'Analytics',
+  id: 'component-catalog',
+  sidebarDisplayName: 'Catalog',
   iconName: 'globe',
-  component: CatalogAnalytics,
+  component: ComponentCatalog,
 });
 
 extension.registerService({
@@ -126,6 +128,13 @@ extension.registerService({
   sidebarDisplayName: 'OpenPASS',
   iconName: 'globe',
   component: DigitalAgOpenPASS,
+});
+
+extension.registerService({
+  id: 'analytics',
+  sidebarDisplayName: 'Analytics',
+  iconName: 'globe',
+  component: CatalogAnalytics,
 });
 
 extension.serviceCustomizations.workflows.dagTasks = generatedTasks;
